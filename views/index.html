@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masakan</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-warning">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><ion-icon name="fast-food-outline"></ion-icon></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse navigation" id="navbarNavDropdown">
+                <ul class="navbar-nav navigation_item">
+                </ul>
+            </div>
+            <div class="container-fluid d-flex justify-content-end">
+                <form class="d-flex justify-content-end" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="keyword">
+                    <button class="btn btn-outline-success" type="button" id="keyword_search">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="container base">
+        <div class="container" id="new_recipe">
+            <div class="container d-flex justify-content-center title">
+                <h1>New Recipes</h1>
+            </div>
+            <div class="container d-flex flex-row flex-wrap justify-content-around p-5" id="container_card">
+            </div>
+        </div>
+        <div class="container d-flex flex-column">
+            <div class="container d-flex justify-content-center title">
+                <h1 class="title_other_recipes">Menu Masakan Lain</h1>
+            </div>
+            <div class="containerd-flex flex-row flex-wrap justify-content-center">
+                <div class="container d-flex flex-row flex-wrap justify-content-start p-5" id="container_other_menu_card">
+                </div>
+            </div>
+            <nav aria-label="...">
+                <ul class="pagination justify-content-center">
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                        </a>
+                    </li>
+                    <div class="page_number">
+                        <ul class="d-flex page_number_nav d-flex flex-row">
+                            <li class="page-item active page">
+                                <a class="page-link" href="#container_other_menu_card">1</a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link page" href="#container_other_menu_card">2</a>
+                            </li>
+                            <li class="page-item page">
+                                <a class="page-link" href="#container_other_menu_card">3</a>
+                            </li>
+                            <li class="page-item page">
+                                <a class="page-link" href="#container_other_menu_card">...</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <script type="module" src="/js/index.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

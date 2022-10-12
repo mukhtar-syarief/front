@@ -1,0 +1,60 @@
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.hasil_search {
+  row-gap: 15px;
+}
+.hasil_search div div h5 {
+  height: 50px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#new_recipe .title h1 {
+  font-family: "Roboto", sans-serif;
+}
+#new_recipe #container_card {
+  row-gap: 15px;
+}
+#new_recipe #container_card div div h5 {
+  height: 50px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+#new_recipe #container_card div div div {
+  display: flex;
+  flex-direction: column;
+}
+
+#container_other_menu_card {
+  row-gap: 15px;
+  column-gap: 5px;
+}
+#container_other_menu_card div div h5 {
+  height: 50px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.page_number {
+  display: flex;
+  column-gap: 5px;
+}
+.page_number ul {
+  padding: 0;
+  margin: 0;
+  width: 137px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.recipe_detail {
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+}
