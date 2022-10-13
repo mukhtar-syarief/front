@@ -13,7 +13,7 @@ const createCard = function (value){
     let card = `<div class="card" style="width: 18rem;">
                     <img src="${value['thumb']}" class="card-img-top" alt="${value['title']}">
                     <div class="card-body">
-                        <h5 class="card-title">${value['title']}</h5>
+                        <h5 class="card-title" title="${value['title']}">${value['title']}</h5>
                         <div>
                             <p class="time">Time : <span>${value['times']}</span></p>
                             <p class="serving">Serving : <span>${value['serving']}</span></p>

@@ -1,4 +1,6 @@
 import { baseUrl } from "./const/base.js";
+import { createCard  } from "./createCard.js";
+
 
 const otherFood = function(){
     $.get(baseUrl+'/api/recipes/1', function(results){
